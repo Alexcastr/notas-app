@@ -36,7 +36,7 @@ const Index = ({notes}) => {
             Editar nota
           </h1>
           <textarea
-            value={""}
+            value={anotado}
             onChange={(e) => {
               setAnotado(e.target.value);
             }}
@@ -46,11 +46,11 @@ const Index = ({notes}) => {
             rows="10"
           ></textarea>
           <div className="flex w-full justify-around mt-3">
-            <button type="submit" className="text-4xl">
-              <i className="bi bi-check-circle-fill duration-200 hover:text-green-500 text-green-600"></i>
+            <button type="button" className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full">
+              aceptar
             </button>
-            <button className="text-4xl">
-              <i className="bi bi-x-circle-fill duration-200 hover:text-red-400 text-red-600"></i>
+            <button onClick={()=>setEdit(!edit)} type="button" className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full">
+              rechazar
             </button>
           </div>
         </div>

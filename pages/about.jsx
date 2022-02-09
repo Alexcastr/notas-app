@@ -18,6 +18,7 @@ const about = () => {
         title={"ejemplo"}
         description={"lorem ipzo sagasfgafdg "}
       />
+      <button type="button"><i class="fa-solid fa-circle-check text-black"></i>hi!</button>
     </div>
   );
 };
