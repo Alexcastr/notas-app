@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.expandir{
+    display:none
+}
+
+.expandDown{
+    width: 100%;
+    display: block;
+    flex-grow: 1;
+}
+
+@media(min-width: 1024px){
+    #expandir {
+        display: flex;
+        align-items: center;
+        width: auto;
+
+    }
+
+    #esconder {
+        display: none;
+        
+    }    
+}
+
+
+    
+
